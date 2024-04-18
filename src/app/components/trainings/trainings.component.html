@@ -1,1 +1,11 @@
 <p>Components trainings works!</p>
+<!-- trainings.component.html -->
+
+<h2>All Trainings</h2>
+<ul>
+  <li *ngFor="let training of trainings">
+    {{ training.name }} <!-- Załóżmy, że nazwa treningu znajduje się w polu 'name' -->
+  </li>
+</ul>
+
+
