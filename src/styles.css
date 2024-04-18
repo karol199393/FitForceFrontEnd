@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+/* Ustawienie czcionki dla całej aplikacji */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Styl dla nagłówka */
+h1 {
+  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+
+}
+
+
+/* Dostosowanie tła dla elementu o klasie 'container' */
+.container1 {
+  display: flex; /* Używamy flexboxa do zarządzania układem paneli */
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.container2 {
+  display: flex; /* Używamy flexboxa do zarządzania układem paneli */
+  background-color: #f0f0f0;
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+/* Styl dla lewego panelu */
+.left-panel {
+  flex: 1; /* Elastyczny panel, zajmie tyle miejsca, ile jest dostępne */
+  padding: 10px;
+  background-color: #fff; /* Dostosowanie koloru tła */
+  border: 1px solid #ddd; /* Dodanie obramowania */
+  border-radius: 5px; /* Zaokrąglenie krawędzi */
+}
+
+/* Styl dla środkowego panelu */
+.middle-panel {
+  flex: 2; /* Elastyczny panel, zajmie dwa razy więcej miejsca niż lewy */
+  padding: 10px;
+  background-color: #fff; /* Dostosowanie koloru tła */
+  border: 1px solid #ddd; /* Dodanie obramowania */
+  border-radius: 5px; /* Zaokrąglenie krawędzi */
+  margin: 0 10px; /* Marginesy na lewo i prawo dla odstępu między panelami */
+  text-align: center;
+}
+
+/* Styl dla prawego panelu */
+.right-panel {
+  flex: 1; /* Elastyczny panel, zajmie tyle miejsca, ile jest dostępne */
+  padding: 10px;
+  background-color: #fff; /* Dostosowanie koloru tła */
+  border: 1px solid #ddd; /* Dodanie obramowania */
+  border-radius: 5px; /* Zaokrąglenie krawędzi */
+}
+
+
+/* Styl dla nagłówka */
+h1 {
+  color: #333;
+}
+
+/* Styl dla przycisków */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dodatkowy styl dla przycisków, gdy są najechane kursorem */
+button:hover {
+  background-color: #0056b3;
+}
+
+/*Styl dla footera */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/* Styl dla nagłówka */
+h1 {
+  color: #333;
+}
+
+/* Styl dla przycisków */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dodatkowy styl dla przycisków, gdy są najechane kursorem */
+button:hover {
+  background-color: #0056b3;
+}
+
+.left-panel:hover {
+  background-color: #818080;
+}
+
+.middle-panel:hover {
+  background-color: #818080;
+}
+
+.right-panel:hover {
+  background-color: #818080;
+}
