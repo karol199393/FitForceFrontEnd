@@ -24,7 +24,8 @@ export class TrainingsComponent implements OnInit {
   getAllTrainings(): void {
     this.trainingsService.getAllTrainings().subscribe(
       (response) => {
-        this.trainings = response; // Przypisz dane do tablicy trainings
+        this.trainings = response;
+        console.log(this.trainings)
       },
       (error) => {
         console.error('Wystąpił błąd podczas pobierania treningów:', error);
@@ -32,8 +33,5 @@ export class TrainingsComponent implements OnInit {
       }
     );
   }
-
-
-
 
 }
