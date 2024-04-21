@@ -10,7 +10,7 @@ export class TrainingsService {
   constructor(private http: HttpClient) { }
 
   getAllTrainings(): Observable<Training[]> {
-    return this.http.get<Training[]>('/trainings/getAllTrainings');
+    return this.http.get<Training[]>('/trainings/getAllTrainings')
   }
 
   getTrainingById(id: number): Observable<any> {
