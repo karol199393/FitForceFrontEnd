@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { TrainingsService} from "../../services/trainings.service";
+import {Component, OnInit} from '@angular/core';
+import {TrainingsService} from "../../services/trainings.service";
 import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
@@ -15,7 +15,9 @@ import {NgForOf, NgIf} from "@angular/common";
 export class TrainingsComponent implements OnInit {
   protected trainings: any;
   protected selectedTraining: any;
-  constructor(private trainingsService: TrainingsService) { }
+
+  constructor(private trainingsService: TrainingsService) {
+  }
 
   ngOnInit(): void {
     this.getAllTrainings();
